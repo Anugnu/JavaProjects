@@ -27,7 +27,6 @@ public class Student {
 		this.gradeYear = in.nextInt();
 		
 		setStudentID();
-		System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentID);
 	
 	}
 	
@@ -43,11 +42,11 @@ public class Student {
 	public void enroll() {
 		//Get inside a loop user gets 0
 		do {
-			System.out.println("Enter course to enroll (Q to quit): ");
+			System.out.print("Enter course to enroll (Q to quit): ");
 			Scanner in = new Scanner(System.in);
 			String course = in.nextLine();
 			if(!course.equals("Q")) {
-				courses = courses + "\n" + course;
+				courses = courses + "\n " + course;
 				tutionBalance = tutionBalance + costOfCourse;
 			}
 			else {
@@ -55,8 +54,6 @@ public class Student {
 			}
 		} while (1 != 0);
 		
-		System.out.println("ENROLLED IN: " + courses);
-		System.out.println("TUTUION BALANCE: " + tutionBalance);
 	} 
 	
 	// View balance
@@ -79,6 +76,8 @@ public class Student {
 	// show status
 	public String toString() {
 		return "Name: " + firstName + " " + lastName +
+				"\nGrade Level: " + gradeYear +
+				"\nStudent ID: " + studentID +
 				"\nCourses Enrolled: " + courses +
 				"\nBalance: $ " + tutionBalance;
 	}
