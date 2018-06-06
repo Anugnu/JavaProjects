@@ -77,4 +77,9 @@ public class Student {
 		
 	}
 	// show status
+	public String toString() {
+		return "Name: " + firstName + " " + lastName +
+				"\nCourses Enrolled: " + courses +
+				"\nBalance: $ " + tutionBalance;
+	}
 }
