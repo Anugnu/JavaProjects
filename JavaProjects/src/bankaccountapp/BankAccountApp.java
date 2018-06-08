@@ -8,8 +8,6 @@ public class BankAccountApp {
 		
 		Savings savacc1 = new Savings("Rich Love","456657897",2500);
 		
-		savacc1.compund();
-		
 		savacc1.showInfo();
 		System.out.println("*****************************");
 		chkacc1.showInfo();
