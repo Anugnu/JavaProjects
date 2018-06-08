@@ -16,7 +16,7 @@ public class Checking extends Account {
 	
 	@Override
 	public void setRate() {
-		System.out.println("Implement rate for Checking");
+		rate = getBaseRate() * .15;
 	}
 	
 	// List any methods specific to the checking account
@@ -30,7 +30,8 @@ public class Checking extends Account {
 		System.out.println(
 				" Your Checking Account Features" +
 				"\n Debit Card Number: " + debitCardNumber +
-				"\n Debit Card PIN: " + debitCardPIN
+				"\n Debit Card PIN: " + debitCardPIN +
+				"\n Rate: " + rate + "%"
 				);
 	}
 
