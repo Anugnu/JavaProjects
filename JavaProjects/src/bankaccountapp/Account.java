@@ -36,6 +36,13 @@ public abstract class Account implements IBaseRate {
 		
 	}
 	
+	public void compund() {
+		double accuredInterest = balance * (rate/100);
+		balance = balance + accuredInterest;
+		System.out.println("Accured Interest: $" + accuredInterest);
+		printBalance();
+	}
+	
 	// List common methods - transactions
 	public void deposit(double amount) {
 		balance = balance + amount;

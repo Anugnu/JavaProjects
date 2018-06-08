@@ -8,13 +8,13 @@ public class BankAccountApp {
 		
 		Savings savacc1 = new Savings("Rich Love","456657897",2500);
 		
+		savacc1.compund();
+		
 		savacc1.showInfo();
 		System.out.println("*****************************");
 		chkacc1.showInfo();
 		
-		savacc1.deposit(5000);
-		savacc1.withdraw(200);
-		savacc1.transfer("Brokerage", 3000);
+		
 		
 		// Read a CSV File then create new accounts based on that data
 
