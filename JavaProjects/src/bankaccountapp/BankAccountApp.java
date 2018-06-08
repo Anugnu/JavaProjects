@@ -16,13 +16,14 @@ public class BankAccountApp {
 			String sSN = accountHolder[1];
 			String accountType = accountHolder[2];
 			double initDeposit = Double.parseDouble(accountHolder[3]);
+			
 			System.out.println(name + " " + sSN + " " + accountType + " $" + initDeposit);
 			
 			if (accountType.equals("Savings")) {
 				accounts.add(new Savings(name, sSN, initDeposit));
 			}
 			else if (accountType.equals("Checking")) {
-				accounts.add(new Savings(name, sSN, initDeposit));
+				accounts.add(new Checking(name, sSN, initDeposit));
 			}
 			else {
 				System.out.println("ERROR READING ACCOUNT TYPE");
