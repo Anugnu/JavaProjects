@@ -22,7 +22,11 @@ public abstract class Account implements IBaseRate {
 		index++;
 		this.accountNumber = setAccountNumber();
 		
+		setRate();
+		
 	}
+	
+	public abstract void setRate();
 	
 	private String setAccountNumber() {
 		String lastTwoOfSSN = sSN.substring(sSN.length()-2, sSN.length());
