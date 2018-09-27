@@ -70,8 +70,5 @@ public abstract class Account implements IBaseRate {
 				"\nBALANCE: " + balance
 				);
 	}
-	// this is test for making sure eclipse can change code into github.
-	public void test() {
-		
-	}
+	
 }
